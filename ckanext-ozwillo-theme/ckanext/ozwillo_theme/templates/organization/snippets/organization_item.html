@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{% block item %}
+<div class="col-md-4 col-sm-6 media-custom-item-wrapper">
+  
+  {{ super() }}
+  
+</div>
+{% endblock %}
+
+{% if position is divisibleby 3 %}
+  <li class="clearfix js-hide"></li>
+{% endif %}
