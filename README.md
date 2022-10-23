@@ -1,6 +1,22 @@
-------------------------
-ckanext-ozwillo-theme
-------------------------
+# Raseel Open Data Platform Theme
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square)
+![KeycloakVersion: 16.1.1](https://img.shields.io/badge/KeycloakVersion-16.1.1-yellowgreen)
+![NginxVersion: 1.22.0](https://img.shields.io/badge/NginxVersion-1.22.0-orange)
+![PostgresVersion: 14.3](https://img.shields.io/badge/PostgresVersion-14.3-blue)
+
+
+**Homepage:** <https://dev-opendata.raseel.city>
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| Meriam Bouaouja | <mbo@softifi.com> |  |
+| Hossam Badri | <hbadri@mda.gov.sa> |  |
+
+***
+This theme is based on: ckanext-ozwillo-theme
+
 
 Requirements
 ============
