@@ -1,12 +1,12 @@
-# French translations for ckanext-ozwillo-theme.
+# French translations for ckanext-raseel-theme.
 # Copyright (C) 2015 ORGANIZATION
 # This file is distributed under the same license as the
-# ckanext-ozwillo-theme project.
+# ckanext-raseel-theme project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-ozwillo-theme 0.0.1\n"
+"Project-Id-Version: ckanext-raseel-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-10-06 08:31+0200\n"
 "PO-Revision-Date: 2015-02-03 14:23+0100\n"

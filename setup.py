@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-ozwillo-theme''',
+    name='''ckanext-raseel-theme''',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/ozwillo/ckanext-ozwillo-theme',
+    url='https://github.com/raseel-internal/ckanext-raseel-theme',
 
     # Author details
     author='''Ozwillo''',
@@ -48,7 +48,7 @@ setup(
 
 
     # What does your project relate to?
-    keywords='''CKAN Ozwillo''',
+    keywords='''CKAN Raseel''',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().

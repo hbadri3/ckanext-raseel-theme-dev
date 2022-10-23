@@ -15,7 +15,7 @@
 | Hossam Badri | <hbadri@mda.gov.sa> |  |
 
 ***
-This theme is based on: ckanext-ozwillo-theme
+This theme is based on: ckanext-raseel-theme
 
 
 Requirements
@@ -26,7 +26,7 @@ This extension is compatible with CKAN 2.7 and higher.
 Installation
 ============
 
-To install ckanext-ozwillo-theme:
+To install ckanext-raseel-theme:
 
 1.  Activate your CKAN virtual environment, for example:
 
@@ -68,11 +68,11 @@ You can customize the homepage with these parameters:
 Development Installation
 ========================
 
-To install ckanext-ozwillo-theme for development, activate your CKAN
+To install ckanext-raseel-theme for development, activate your CKAN
 virtualenv and do:
 
-    git clone https://github.com/ozwillo/ckanext-ozwillo-theme.git
-    cd ckanext-ozwillo-theme
+    git clone https://github.com/ozwillo/ckanext-raseel-theme.git
+    cd ckanext-raseel-theme
     python setup.py develop
     pip install -r dev-requirements.txt
 
