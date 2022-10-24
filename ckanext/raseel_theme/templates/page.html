@@ -1,0 +1,11 @@
+{% ckan_extends %}
+
+{%- block scripts %}
+
+  {{ super() }}
+
+  {# theme/raseel must be AFTER super() for particles.js to work #}
+  {% asset 'theme/raseel' %}
+
+{% endblock -%}
+
