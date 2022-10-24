@@ -34,9 +34,9 @@ To install ckanext-raseel-theme:
 
 2.  Install the package into your virtual environment:
 
-        pip install ckanext-ozwillo_theme
+        pip install ckanext-raseel_theme
 
-3.  Add `ozwillo_theme` to the `ckan.plugins` setting in your CKAN
+3.  Add `raseel_theme` to the `ckan.plugins` setting in your CKAN
     config file (by default the config file is located at
     `/etc/ckan/default/production.ini`).
 
@@ -50,20 +50,20 @@ Config Settings
 
 The following configuration variables must be set:
 
-* `ckanext.ozwillo_theme.plugin.ozwillo_url` (eg <https://www.ozwillo-preprod.eu>)
-* `ckanext.ozwillo_theme.plugin.ozwillo_portal_url` (eg <https://portal.ozwillo-preprod.eu>)
-* `ckanext.ozwillo_theme.plugin.ozwillo_ckan_app_id` (CKAN app UUID in Ozwillo portal)
+* `ckanext.raseel_theme.plugin.raseel_url` (eg <https://www.raseel-preprod.eu>)
+* `ckanext.raseel_theme.plugin.raseel_portal_url` (eg <https://portal.raseel-preprod.eu>)
+* `ckanext.raseel_theme.plugin.raseel_ckan_app_id` (CKAN app UUID in raseel portal)
 
 You can customize the homepage with these parameters:
 
      # The parameters of the map display on the page (here are production parameters)
-    ckanext.ozwillo_theme.view_id = 038a8703-6031-4386-a962-7d55029724df
-    ckanext.ozwillo_theme.resource_id = c39c4c65-ffba-4a30-a164-bb29fa0e6fc1
-    ckanext.ozwillo_theme.package_id = syn
+    ckanext.raseel_theme.view_id = 038a8703-6031-4386-a962-7d55029724df
+    ckanext.raseel_theme.resource_id = c39c4c65-ffba-4a30-a164-bb29fa0e6fc1
+    ckanext.raseel_theme.package_id = syn
     # To activate the location field, install ckanext-spatial and then set
-    ckanext.ozwillo_theme.spatial_installed = true
+    ckanext.raseel_theme.spatial_installed = true
     # To use OSM names typeahead suggestions, register and get a key, then complete the parameter
-    ckanext.ozwillo_theme.osmnames_key = [your key]
+    ckanext.raseel_theme.osmnames_key = [your key]
 
 Development Installation
 ========================
@@ -71,7 +71,7 @@ Development Installation
 To install ckanext-raseel-theme for development, activate your CKAN
 virtualenv and do:
 
-    git clone https://github.com/ozwillo/ckanext-raseel-theme.git
+    git clone https://github.com/raseel/ckanext-raseel-theme.git
     cd ckanext-raseel-theme
     python setup.py develop
     pip install -r dev-requirements.txt
@@ -96,4 +96,4 @@ To run the tests, do:
 To run the tests and produce a coverage report, first make sure you have
 coverage installed in your virtualenv (`pip install coverage`) then run:
 
-    nosetests --nologcapture --with-pylons=test.ini --with-coverage --cover-package=ckanext.ozwillo_theme --cover-inclusive --cover-erase --cover-tests
+    nosetests --nologcapture --with-pylons=test.ini --with-coverage --cover-package=ckanext.raseel_theme --cover-inclusive --cover-erase --cover-tests

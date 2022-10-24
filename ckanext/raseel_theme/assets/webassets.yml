@@ -1,0 +1,17 @@
+raseel-css:
+  output: ckanext-raseel-theme/%(version)s_raseel.css
+  contents:
+    - raseel.css
+
+raseel:
+  output: ckanext-raseel-theme/%(version)s_raseel.js
+  extra:
+    preload:
+      - ckanext-raseel-theme/raseel-css
+  contents:
+    - raseel.js
+    - particles-loading.js
+
+# unused :
+#jquery-ui.js theme_location.js off-canvas.js responsive.css
+

@@ -1,3 +1,3 @@
 include README.rst
-recursive-include ckanext/ozwillo_theme *.html *.json *.js *.less *.css
-recursive-include ckanext/ozwillo_theme *.png *.jpg *.woff *.ttf
+recursive-include ckanext/raseel_theme *.html *.json *.js *.less *.css
+recursive-include ckanext/raseel_theme *.png *.jpg *.woff *.ttf

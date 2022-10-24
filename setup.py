@@ -16,15 +16,15 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='1.0.0',
 
-    description='''Ozwillo theme for CKAN''',
+    description='''raseel theme for CKAN''',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/raseel-internal/ckanext-raseel-theme',
 
     # Author details
-    author='''Ozwillo''',
-    author_email='''contact@ozwillo.org''',
+    author='''raseel''',
+    author_email='''contact@raseel.org''',
 
     # Choose your license
     license='AGPL',
@@ -78,7 +78,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        ozwillo_theme=ckanext.ozwillo_theme.plugin:OzwilloThemePlugin
+        raseel_theme=ckanext.raseel_theme.plugin:raseelThemePlugin
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
     ''',
