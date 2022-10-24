@@ -20,7 +20,7 @@
             </ul>
             {% endif %}
             <a href="/{{current_lang}}">
-                <img src="/img/logo.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+                <img src="/img/raseel_logo.png" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
             </a>
             {% if c.userobj %}
             <a class="btn visible-xs-inline-block pull-right" href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i></a>
@@ -93,11 +93,11 @@
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav navbar-fixed-top">
     <div class="container">
         <div class="t3-navbar">
-		<div class="col-xs-6 menu"><!-- [Ozwillo] xs-6 for admin -->
+		<div class="col-xs-6 menu  text-center"><!-- [Ozwillo] xs-6 for admin -->
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/{{current_lang}}" class="logo">
-                            <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
+                            <img src="/img/raseel_logo.png" alt="{% trans %}Home{% endtrans %}">
                         </a>
                     </li>                       
                             <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
