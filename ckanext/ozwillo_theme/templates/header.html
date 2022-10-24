@@ -5,26 +5,20 @@
             <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
                 <i class="fa fa-bars"></i>
             </button>            
-            <ul class="dropdown-menu">
-                <li  {#% if current_page.endswith('') %} class='active' {% endif %#}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-                <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
-                                {% trans %}Le projet{% endtrans %}</a></li>
+            <ul class="dropdown-menu">       
+                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
+                                    trans %}Dashboard{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
                         trans %}Organizations{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
-                                            trans %}Thèmes{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a href="/{{current_lang}}/datarequest">{%
-                        trans %}Data Request{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a href="/{{current_lang}}/showcase">{%
-                        trans %}Showcase{% endtrans %}</a></li>
+                                            trans %}Groups{% endtrans %}</a></li>
                 {% if c.userobj %}
                 <li class="divider"></li>
-                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                        trans %}Dashboard{% endtrans %}</a></li>
-                {% endif %}
+               
             </ul>
+            {% endif %}
             <a href="/{{current_lang}}">
                 <img src="/img/logo.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
             </a>
@@ -56,18 +50,14 @@
         <li class="deeper dropdown parent">
             <a class="nav-data" href="#">{% trans %}Data{% endtrans %}</a>
             <ul class="nav">
+                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
+                    trans %}Dashboard{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
                         trans %}Organizations{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                        trans %}Dashboard{% endtrans %}</a></li>
             </ul>
             {% else %}
-        <li class="active deeper dropdown parent">
-            <a class="dropdown-toggle nav-data" href="/">{% trans %}Data{% endtrans %}</a>
-            {% endif %}
-        </li>
         <li class="divider"></li>
 
         {% if c.userobj.sysadmin %}
@@ -103,40 +93,23 @@
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav navbar-fixed-top">
     <div class="container">
         <div class="t3-navbar">
-		<div class="col-xs-6 menu text-center"><!-- [Ozwillo] xs-6 for admin -->
+		<div class="col-xs-6 menu"><!-- [Ozwillo] xs-6 for admin -->
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/{{current_lang}}" class="logo">
                             <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
                         </a>
-                    </li>
-                    <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-                    <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
-                        {% trans %}Le projet{% endtrans %}</a></li>
-                    <li class="item-119 deeper dropdown parent">
-                        <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                    </li>                       
+                            <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
+                                    trans %}Dashboard{% endtrans %}</a></li>
                             <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
-                                    trans %}Datasets{% endtrans %}</a></li>
+                                        trans %}Datasets{% endtrans %}</a></li>
                             <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
                                     href="/{{current_lang}}/organization">{%
                                     trans %}Organizations{% endtrans %}</a></li>
                             <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
-                                    trans %}Thèmes{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
-                                    href="/{{current_lang}}/datarequest">
-                                    {% trans %}Data Request{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a
-                                    href="/{{current_lang}}/showcase">{%
-                                    trans %}Showcase{% endtrans %}</a></li>
-                        </ul>
-                    </li>
-
-                    {% if c.userobj %}
-                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
-                            href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
-                    {% endif %}
+                                    trans %}Groups{% endtrans %}</a></li>
+                                        
                 </ul>
             </div>
             <div class="col-xs-6"><!-- [Ozwillo] xs-6 for admin -->
