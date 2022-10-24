@@ -9,7 +9,7 @@ import ckan.lib.helpers as h
 from datetime import datetime
 
 
-class raseelThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
+class RaseelThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.ITranslation)
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)

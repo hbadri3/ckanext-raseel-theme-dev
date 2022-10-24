@@ -78,7 +78,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        raseel_theme=ckanext.raseel_theme.plugin:raseelThemePlugin
+        raseel_theme=ckanext.raseel_theme.plugin:RaseelThemePlugin
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
     ''',
