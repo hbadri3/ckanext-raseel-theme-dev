@@ -1,21 +1,44 @@
 {% set current_lang = request.environ.CKAN_LANG %}
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                <a href="/" class="footer-brand"></a>
+<body>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Madinah Smart City © 2022</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-4 footer-links">
-                <a href="https://raseelapp.com/contact-us/  target="_blank">{% trans %}Contact us{% endtrans %}</a>
-                <a href="https://raseelapp.com/our-story/"  target="_blank">{% trans %}About us{% endtrans %}</a>
-            </div>
-            <div class="col-md-3 col-sm-3 social-media-box">
-                <a href="https://www.instagram.com/raseelapp/" class="social-media-logo instagram-logo" target="_blank"></a>
-                <a href="https://lt.linkedin.com/company/raseel" class="social-media-logo linkedin-logo" target="_blank"></a>
-            </div>
-            <div class="col-md-3 col-sm-5 footer-link">
-                <a href="https://raseelapp.com/">{% trans %}Created by Raseel with{% endtrans %} <i class="fa fa-heart"></i></a>
-            </div>
-        </div>
+        </footer>
     </div>
-</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
