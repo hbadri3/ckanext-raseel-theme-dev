@@ -19,17 +19,17 @@
                                             trans %}Groups{% endtrans %}</a></li>
             </ul>
             <a href="/{{current_lang}}">
-                <img src="/img/logo.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+                <img src="/img/raseel.jpg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
             </a>
             {% if c.userobj %}
             <a class="btn visible-xs-inline-block pull-right" href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i></a>
             {% else %}
-                {% if not g.ozwillo_global_login_organization_name or not g.ozwillo_global_login_organization_name|length%}
-                <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">
+                {% if not g.raseel_global_login_organization_name or not g.raseel_global_login_organization_name|length%}
+                <a class="btn navbar-btn btn-pink" href="{{ g.raseel_portal_url }}/my?ui_locales={{current_lang}}">
                     {% trans %}Log in{% endtrans %}</a>
                 {% else %}
                 {# login : optionally to global organization that redirects to its URL on CKAN instead of to the Portal #}
-                <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{ g.ozwillo_global_login_organization_name }}/sso">
+                <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{ g.raseel_global_login_organization_name }}/sso">
                     {% trans %}Log in{% endtrans %}</a>
                 {% endif %}
             {% endif %}
@@ -42,7 +42,7 @@
         </li>
         <li class="divider first"></li>
         <li>
-            <a class="nav-apps" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{%
+            <a class="nav-apps" href="{{ g.raseel_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{%
                 trans %}Catalog{% endtrans %}</a>
         </li>
         {% if c.userobj %}
@@ -78,12 +78,12 @@
 	</li>
         {% else %}
 	<li>
-            {% if not g.ozwillo_global_login_organization_name or not g.ozwillo_global_login_organization_name|length%}
-            <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">
+            {% if not g.raseel_global_login_organization_name or not g.raseel_global_login_organization_name|length%}
+            <a class="btn navbar-btn btn-pink" href="{{ g.raseel_portal_url }}/my?ui_locales={{current_lang}}">
                 {% trans %}Log in{% endtrans %}</a>
             {% else %}
             {# login : optionally to global organization that redirects to its URL on CKAN instead of to the Portal #}
-            <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{ g.ozwillo_global_login_organization_name }}/sso">
+            <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{ g.raseel_global_login_organization_name }}/sso">
                 {% trans %}Log in{% endtrans %}</a>
             {% endif %}
         </li>
@@ -100,59 +100,53 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/{{current_lang}}" class="logo">
-                            <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
+                            <img src="/img/raseel.jpg" alt="{% trans %}Home{% endtrans %}">
                         </a>
                     </li>                       
-                            <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                                    trans %}Dashboard{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
-                                        trans %}Datasets{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
-                                    href="/{{current_lang}}/organization">{%
-                                    trans %}Organizations{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
-                                    trans %}Groups{% endtrans %}</a></li>
-                                        
+                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
+                            trans %}Dashboard{% endtrans %}</a></li>
+                    <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
+                                trans %}Datasets{% endtrans %}</a></li>
+                    <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
+                            href="/{{current_lang}}/organization">{%
+                            trans %}Organizations{% endtrans %}</a></li>
+                    <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
+                            trans %}Groups{% endtrans %}</a></li>                                       
                 </ul>
             </div>
             <div class="col-xs-6"><!-- [Ozwillo] xs-6 for admin -->
                 <ul class="nav navbar-nav navbar-right">
-
                     {% if c.userobj.sysadmin %}
-        <li>
-          <a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
-            <i class="fa fa-gavel" aria-hidden="true"></i>
-            <!-- span class="text">{{ _('Admin') }}</span -->
-          </a>
-        </li>
-        {% endif %}
-	{% if c.userobj %}
-	<li>
-          <a href="{{ h.url_for('user.read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
-                  {{ h.user_image((c.user if c and c.user else ''), size=22) }}
-                  <span class="username">{{ c.userobj.display_name }}</span>
-                </a>
-        </li>
-	{% block header_account_settings_link %}
-        <li>
-          <a href="{{ h.url_for('user.edit', id=c.userobj.name) }}" title="{{ _('Profile settings') }}">
-            <i class="fa fa-cog" aria-hidden="true"></i>
-            <!-- [Ozwillo] span class="text">{{ _('Profile settings') }}</span -->
-          </a>
-        </li>
-        {% endblock %}
-	{% endif %}
-
+                    <li><a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
+                        <i class="fa fa-gavel" aria-hidden="true"></i><!-- span class="text">{{ _('Admin') }}</span --></a>
+                    </li>
+                    {% endif %}
+                    {% if c.userobj %}
+                    <li>
+                        <a href="{{ h.url_for('user.read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
+                                {{ h.user_image((c.user if c and c.user else ''), size=22) }}
+                                <span class="username">{{ c.userobj.display_name }}</span>
+                        </a>
+                        </li>
+                    {% block header_account_settings_link %}
+                        <li>
+                        <a href="{{ h.url_for('user.edit', id=c.userobj.name) }}" title="{{ _('Profile settings') }}">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <!-- [Ozwillo] span class="text">{{ _('Profile settings') }}</span -->
+                        </a>
+                        </li>
+                        {% endblock %}
+                    {% endif %}
                     <li class="item-123">
                         {% if c.userobj %}
-                        <a class="btn btn-pink navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
+                        <a class="btn btn-pink navbar-btn" href="{{h.url_for('/user/_logout') }}">{% trans %}Log out{% endtrans %}</a>
                         {% else %}
-                            {% if not g.ozwillo_global_login_organization_name or not g.ozwillo_global_login_organization_name|length%}
-                            <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">
+                            {% if not g.raseel_global_login_organization_name or not g.raseel_global_login_organization_name|length%}
+                            <a class="btn navbar-btn btn-pink" href="{{h.url_for('/user/login') }}">
                                 {% trans %}Log in{% endtrans %}</a>
                             {% else %}
                             {# login : optionally to global organization that redirects to its URL on CKAN instead of to the Portal #}
-                            <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{ g.ozwillo_global_login_organization_name }}/sso">
+                            <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{g.raseel_global_login_organization_name}}/sso">
                                 {% trans %}Log in{% endtrans %}</a>
                             {% endif %}
                         {% endif %}
