@@ -6,17 +6,14 @@
                 <i class="fa fa-bars"></i>
             </button>            
             <ul class="dropdown-menu">
+               
+                <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%trans %}Datasets{% endtrans %}</a></li>
+                <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%trans %}Publishers{% endtrans %}</a></li>
+                <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%trans %}Groups{% endtrans %}</a></li>
                 {% if c.userobj %}
                 <li class="divider"></li>
-                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                        trans %}Dashboard{% endtrans %}</a></li>
+                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%trans %}Dashboard{% endtrans %}</a></li>
                 {% endif %}
-                <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
-                        trans %}Datasets{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
-                        trans %}Organizations{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
-                                            trans %}Groups{% endtrans %}</a></li>
             </ul>
             <a href="/{{current_lang}}">
                 <img src="/img/raseel.jpg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
@@ -54,7 +51,7 @@
                 <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
-                        trans %}Organizations{% endtrans %}</a></li>
+                        trans %}Publishers{% endtrans %}</a></li>
             </ul>
             {% else %}
         <li class="active deeper dropdown parent">
@@ -102,16 +99,17 @@
                         <a href="/{{current_lang}}" class="logo">
                             <img src="/img/raseel.jpg" alt="{% trans %}Home{% endtrans %}">
                         </a>
-                    </li>                       
-                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                            trans %}Dashboard{% endtrans %}</a></li>
-                    <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
-                                trans %}Datasets{% endtrans %}</a></li>
+                    </li>
+                    <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>                       
+                    <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%trans %}Datasets{% endtrans %}</a></li>
                     <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
-                            href="/{{current_lang}}/organization">{%
-                            trans %}Organizations{% endtrans %}</a></li>
-                    <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
-                            trans %}Groups{% endtrans %}</a></li>                                       
+                            href="/{{current_lang}}/organization">{%trans %}Publishers{% endtrans %}</a></li>
+                    <li {% if current_page.startswith('/group') %} class='active' {% endif %}>
+                        <a href="/{{current_lang}}/group">{%trans %}Groups{% endtrans %}</a></li>  
+                    {% if c.userobj %}
+                    <li class="divider"></li>  
+                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%trans %}Dashboard{% endtrans %}</a></li>  
+                    {% endif %}                                 
                 </ul>
             </div>
             <div class="col-xs-6"><!-- [Ozwillo] xs-6 for admin -->
@@ -141,11 +139,11 @@
                         {% if c.userobj %}
                         <a class="btn btn-pink navbar-btn" href="{{h.url_for('/user/_logout') }}">{% trans %}Log out{% endtrans %}</a>
                         {% else %}
-                            {% if not g.raseel_global_login_organization_name or not g.raseel_global_login_organization_name|length%}
-                            <a class="btn navbar-btn btn-pink" href="{{h.url_for('/user/login') }}">
-                                {% trans %}Log in{% endtrans %}</a>
-                            {% else %}
-                            {# login : optionally to global organization that redirects to its URL on CKAN instead of to the Portal #}
+                        {% if not g.raseel_global_login_organization_name or not g.raseel_global_login_organization_name|length%}
+                        <a class="btn navbar-btn btn-pink" href="{{h.url_for('/user/login') }}">
+                        {% trans %}Log in{% endtrans %}</a>
+                        {% else %}
+                        {# login : optionally to global organization that redirects to its URL on CKAN instead of to the Portal #}
                             <a class="btn navbar-btn btn-pink" href="{{ g.site_url }}/organization/{{g.raseel_global_login_organization_name}}/sso">
                                 {% trans %}Log in{% endtrans %}</a>
                             {% endif %}
