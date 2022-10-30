@@ -93,7 +93,7 @@
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav navbar-fixed-top">
     <div class="container">
         <div class="t3-navbar">
-            <div class="col-xs-6 menu  text-center"><!-- [raseel] xs-6 for admin -->
+            <div class="col-xs-6 menu-items  text-center"><!-- [raseel] xs-6 for admin -->
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/{{current_lang}}" class="logo">
@@ -112,7 +112,7 @@
                     {% endif %}                                 
                 </ul>
             </div>
-            <div class="col-xs-6"><!-- [Ozwillo] xs-6 for admin -->
+            <div class="col-xs-6 menu-settings"><!-- [Ozwillo] xs-6 for admin -->
                 <ul class="nav navbar-nav navbar-right">
                     {% if c.userobj.sysadmin %}
                     <li><a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
