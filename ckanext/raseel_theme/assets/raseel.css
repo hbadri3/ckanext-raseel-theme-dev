@@ -1490,29 +1490,13 @@ h6,
   padding-top: 2em;
   padding-bottom: 0;
 }
+
 #particles-js {
   height: 340px;
-  background: rgb(255, 153, 51); /* Old browsers */
-  background: -moz-linear-gradient(
-    -45deg,
-    rgb(185, 217, 235) 0%,
-    rgb(137, 207, 240) 48%,
-    rgb(0, 131, 188)
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgb(185, 217, 235) 0%,
-    rgb(137, 207, 240) 48%,
-    rgb(0, 131, 188)
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    -45deg,
-    rgb(185, 217, 235) 0%,
-    rgb(137, 207, 240) 48%,
-    rgb(0, 131, 188) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B9D9EB', endColorstr='#0083BC',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-image: url("/img/Madinah.JPG");
+  background-size: contain;
 }
+
 .searchbar__form {
   background: #00000033;
   padding: 30px 40px;
