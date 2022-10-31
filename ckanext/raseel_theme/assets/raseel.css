@@ -1102,7 +1102,7 @@ div.resource-blocs {
   margin: -2px 0 0px 40%;
 }
 .logo img {
-  height: 30px;
+  height: 50px;
   margin: -12px 0 -2px 0px;
 }
 
@@ -1295,12 +1295,12 @@ footer.footer > a {
 }
 @media (min-width: 992px) {
   #t3-mainnav .container {
-    width: 970px;
+    width: 1200px;
   }
 }
 @media (min-width: 1200px) {
   #t3-mainnav .container {
-    width: 1170px;
+    width: 1600px;
   }
 }
 
