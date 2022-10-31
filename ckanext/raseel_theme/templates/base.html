@@ -1,16 +1,9 @@
-{% ckan_extends %}
-
-{% block styles %}
-  {{ super() }}
-  {% asset 'theme/raseel-css' %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800">
-{% endblock %}
-
-{% block links %}
-   <link rel="shortcut icon" href="/img/data.ico" />
-{% endblock %}
-
-
-{% block body_extras %}
-   {{ super() }}
-{% endblock %}
+{% ckan_extends %} {% block styles %} {{ super() }} {% asset 'theme/raseel-css'
+%}
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800"
+/>
+{% endblock %} {% block links %}
+<link rel="shortcut icon" href="/img/raseel.jpg" />
+{% endblock %} {% block body_extras %} {{ super() }} {% endblock %}
