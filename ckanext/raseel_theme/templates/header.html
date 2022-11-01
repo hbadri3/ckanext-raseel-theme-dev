@@ -60,15 +60,6 @@
         </li>
         <li class="divider"></li>
 
-        {% if c.userobj.sysadmin %}
-        <li>
-          <a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
-            <i class="fa fa-gavel" aria-hidden="true"></i>
-            <!-- [Ozwillo] span class="text">{{ _('Admin') }}</span -->
-          </a>
-        </li>
-        {% endif %}
-
 	{% if c.userobj %}
         <li>
             <a href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i> {% trans %}Log out{% endtrans %}</a>
@@ -114,11 +105,7 @@
             </div>
             <div class="col-xs-6 menu-settings"><!-- [Ozwillo] xs-6 for admin -->
                 <ul class="nav navbar-nav navbar-right">
-                    {% if c.userobj.sysadmin %}
-                    <li><a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
-                        <i class="fa fa-gavel" aria-hidden="true"></i><!-- span class="text">{{ _('Admin') }}</span --></a>
-                    </li>
-                    {% endif %}
+            
                     {% if c.userobj %}
                     <li>
                         <a href="{{ h.url_for('user.read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
