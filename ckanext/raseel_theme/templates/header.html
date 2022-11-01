@@ -109,12 +109,7 @@
                     {% if c.userobj %}
                     <li class="divider"></li>  
                     <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%trans %}Dashboard{% endtrans %}</a></li>  
-                    {% endif %} 
-                    <li>
-                        <a href="/{{current_lang}}" class="logo">
-                            <img src="/img/H.R.LOGO.png" alt="{% trans %}Home{% endtrans %}">
-                        </a>
-                    </li>                                
+                    {% endif %}                               
                 </ul>
             </div>
             <div class="col-xs-6 menu-settings"><!-- [Ozwillo] xs-6 for admin -->
