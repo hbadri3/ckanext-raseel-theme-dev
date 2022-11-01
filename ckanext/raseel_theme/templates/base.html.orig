@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block links %}
-   <link rel="shortcut icon" href="/img/data.ico" />
+   <link rel="shortcut icon"  href="/img/Raseel -logo.png"  />
 {% endblock %}
 
 
