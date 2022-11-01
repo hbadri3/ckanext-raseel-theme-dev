@@ -1,0 +1,531 @@
+# French translations for ckanext-raseel-theme.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the
+# ckanext-raseel-theme project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-raseel-theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-10-06 08:31+0200\n"
+"PO-Revision-Date: 2015-02-03 14:23+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/raseel_theme/templates/footer.html:9
+msgid "Contact"
+msgstr "Contact"
+
+#: ckanext/raseel_theme/templates/footer.html:10
+msgid "Legal Notices"
+msgstr "Mentions légales"
+
+#: ckanext/raseel_theme/templates/footer.html:18
+msgid "Created by raseel with"
+msgstr "Créée par raseel avec"
+
+#: ckanext/raseel_theme/templates/header.html:27
+#: ckanext/raseel_theme/templates/header.html:47
+#: ckanext/raseel_theme/templates/header.html:59
+#: ckanext/raseel_theme/templates/header.html:105
+#: ckanext/raseel_theme/templates/header.html:108
+msgid "Home"
+msgstr "Accueil"
+
+#: ckanext/raseel_theme/templates/header.html:29
+#: ckanext/raseel_theme/templates/header.html:110
+#, fuzzy
+#| msgid "The project"
+msgid "Le projet"
+msgstr "Le projet"
+
+#: ckanext/raseel_theme/templates/header.html:31
+#: ckanext/raseel_theme/templates/header.html:71
+#: ckanext/raseel_theme/templates/header.html:116
+#: ckanext/raseel_theme/templates/user/read_base.html:19
+#: ckanext/raseel_theme/templates/user/read_base.html:53
+msgid "Datasets"
+msgstr "Jeux de données"
+
+#: ckanext/raseel_theme/templates/header.html:33
+#: ckanext/raseel_theme/templates/header.html:73
+#: ckanext/raseel_theme/templates/header.html:119
+#: ckanext/raseel_theme/templates/home/snippets/some_numbers.html:22
+msgid "Organizations"
+msgstr "Organisations"
+
+#: ckanext/raseel_theme/templates/header.html:35
+#: ckanext/raseel_theme/templates/header.html:121
+msgid "Thèmes"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/header.html:37
+#: ckanext/raseel_theme/templates/header.html:124
+msgid "Data Request"
+msgstr "Demande de données"
+
+#: ckanext/raseel_theme/templates/header.html:39
+#: ckanext/raseel_theme/templates/header.html:127
+#: ckanext/raseel_theme/templates/home/snippets/some_numbers.html:28
+msgid "Showcase"
+msgstr "Réutilisations"
+
+#: ckanext/raseel_theme/templates/header.html:43
+#: ckanext/raseel_theme/templates/header.html:75
+#: ckanext/raseel_theme/templates/header.html:132
+#: ckanext/raseel_theme/templates/header.html:141
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: ckanext/raseel_theme/templates/header.html:64
+msgid "Catalog"
+msgstr "Catalogue"
+
+#: ckanext/raseel_theme/templates/header.html:68
+#: ckanext/raseel_theme/templates/header.html:79
+#: ckanext/raseel_theme/templates/header.html:112
+msgid "Data"
+msgstr "Données"
+
+#: ckanext/raseel_theme/templates/header.html:85
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: ckanext/raseel_theme/templates/header.html:87
+#: ckanext/raseel_theme/templates/header.html:152
+msgid "Log in"
+msgstr "Connexion"
+
+#: ckanext/raseel_theme/templates/header.html:149
+msgid ""
+"Log\n"
+"                                    out"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/page.html:7
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:33
+#: ckanext/raseel_theme/templates/organization/snippets/organization_item.html:32
+#, fuzzy
+#| msgid "dataset"
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] "Jeux de données"
+msgstr[1] ""
+
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:35
+#: ckanext/raseel_theme/templates/organization/snippets/organization_item.html:34
+#, fuzzy
+#| msgid "datasets"
+msgid "0 Datasets"
+msgstr "Jeux de données"
+
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:39
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:40
+msgid "View {name}"
+msgstr "Voir {name}"
+
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:44
+msgid "Remove"
+msgstr "Retirer"
+
+#: ckanext/raseel_theme/templates/group/snippets/group_item.html:44
+msgid "Remove dataset from this group"
+msgstr "Retirer le jeu de données du groupe"
+
+#: ckanext/raseel_theme/templates/home/about.html:3
+#: ckanext/raseel_theme/templates/home/about.html:6
+#: ckanext/raseel_theme/templates/home/about.html:16
+msgid "About"
+msgstr "À propos"
+
+#: ckanext/raseel_theme/templates/home/index.html:4
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: ckanext/raseel_theme/templates/home/index.html:17
+msgid "Vos données ont du sens..."
+msgstr ""
+
+#: ckanext/raseel_theme/templates/home/index.html:18
+msgid ""
+"Automatisez l'ouverture et la publication de vos données pour faciliter "
+"leur réutilisation !"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:12
+msgid "Administration"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:18
+msgid "Agriculture<br />& Food"
+msgstr "Agriculture<br />& Alimentation"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:24
+msgid "Town&nbsp;Planning<br />Housing<br />Equipment"
+msgstr "Urbanisme<br />Logement<br />& Equipment"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:30
+msgid "Culture<br />& Tourism"
+msgstr "Culture<br />& Tourisme"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:36
+msgid "Economy<br />& Employment"
+msgstr "Economie<br />& Emploi"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:42
+msgid "Childhood<br />Education<br />& Formation"
+msgstr "Enfance<br />Education<br />& Formation"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:50
+msgid "Environment"
+msgstr "Environnement"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:56
+msgid "Healthcare"
+msgstr "Santé<br/>& Social"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:62
+msgid "Sport"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:68
+msgid "Territory"
+msgstr "Territoire"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:74
+msgid "Transport<br />& Mobility"
+msgstr "Transport<br />& Mobilité"
+
+#: ckanext/raseel_theme/templates/home/snippets/categories.html:80
+msgid "Citizenship<br /> & Solidarity"
+msgstr "Citoyenneté<br />& Solidarité"
+
+#: ckanext/raseel_theme/templates/home/snippets/datasets.html:6
+msgid "Data news"
+msgstr "L'actualité des données"
+
+#: ckanext/raseel_theme/templates/home/snippets/search.html:1
+msgid "eg. Gold Prices"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/home/snippets/search.html:10
+msgid "Search Your Data"
+msgstr "Chercher des données"
+
+#: ckanext/raseel_theme/templates/home/snippets/search.html:14
+msgid "Search"
+msgstr "Chercher"
+
+#: ckanext/raseel_theme/templates/home/snippets/some_numbers.html:10
+#, fuzzy
+msgid "dataset"
+msgstr "Jeux de données"
+
+#: ckanext/raseel_theme/templates/home/snippets/some_numbers.html:10
+#, fuzzy
+msgid "datasets"
+msgstr "Jeux de données"
+
+#: ckanext/raseel_theme/templates/home/snippets/some_numbers.html:16
+msgid "resources"
+msgstr "ressources"
+
+#: ckanext/raseel_theme/templates/organization/snippets/organization_item.html:43
+#: ckanext/raseel_theme/templates/organization/snippets/organization_item.html:44
+msgid "View {organization_name}"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:4
+#, fuzzy
+#| msgid "State"
+msgid "Title"
+msgstr "État"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "URL"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:13
+#, fuzzy
+#| msgid "dataset"
+msgid "eg. my-dataset"
+msgstr "Jeux de données"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:19
+#, fuzzy
+#| msgid "Association"
+msgid "Description"
+msgstr "Association"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "eg. Some useful notes about the data"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "eg. economy, mental health, government"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:30
+msgid "License"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:41
+msgid ""
+"\n"
+"        License definitions and additional information can be found\n"
+"        at <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a>\n"
+"      "
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:70
+#, fuzzy
+#| msgid "Organizations"
+msgid "Organization"
+msgstr "Organisations"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:74
+#, fuzzy
+#| msgid "Organizations"
+msgid "No organization"
+msgstr "Organisations"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:89
+msgid "Visibility"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:92
+#: ckanext/raseel_theme/templates/snippets/package_item.html:32
+#: ckanext/raseel_theme/templates/user/read_base.html:82
+#: ckanext/raseel_theme/templates/user/read_base.html:96
+msgid "Private"
+msgstr "Privé"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:92
+msgid "Public"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:108
+#: ckanext/raseel_theme/templates/user/read_base.html:91
+msgid "State"
+msgstr "État"
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:111
+msgid "Active"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_basic_fields.html:112
+#: ckanext/raseel_theme/templates/snippets/package_item.html:43
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_form.html:28
+msgid ""
+"The <i>data license</i> you select above only applies to the contents\n"
+"          of any resource files that you add to this dataset. By "
+"submitting\n"
+"          this form, you agree to release the <i>metadata</i> values that"
+" you\n"
+"          enter into the form under the\n"
+"          <a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open "
+"Database License</a>."
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_form.html:39
+msgid "Are you sure you want to delete this dataset?"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_form.html:39
+msgid "Delete"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/package/snippets/package_form.html:43
+msgid "Next: Add Data"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/snippets/custom_form_fields.html:20
+#: ckanext/raseel_theme/templates/snippets/custom_form_fields.html:37
+msgid "Custom Field"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/snippets/package_item.html:41
+msgid "Draft"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/snippets/package_item.html:51
+msgid "Popular"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/snippets/package_item.html:58
+msgid "This dataset has no description"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/snippets/social.html:5
+msgid "Social"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/user/read_base.html:5
+#: ckanext/raseel_theme/templates/user/read_base.html:8
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:14
+msgid "Manage"
+msgstr "Gérer"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:20
+msgid "Activity Stream"
+msgstr "Flux d'activités"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:39
+msgid "You have not provided a biography."
+msgstr "Vous n'avez pas renseigné de biographie"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:41
+msgid "This user has no biography."
+msgstr "Cet utilisateur n'a pas de biographie"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:49
+msgid "Followers"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/user/read_base.html:57
+msgid "Edits"
+msgstr "Modifications"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:73
+msgid "Open ID"
+msgstr ""
+
+#: ckanext/raseel_theme/templates/user/read_base.html:76
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:82
+msgid "Email"
+msgstr "Courriel"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:82
+#: ckanext/raseel_theme/templates/user/read_base.html:96
+msgid "This means only you can see this"
+msgstr "Cela signifie que seul vous pouvez voir ça"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:87
+msgid "Member Since"
+msgstr "Membre depuis"
+
+#: ckanext/raseel_theme/templates/user/read_base.html:96
+msgid "API Key"
+msgstr "Clé d'API"
+
+#~ msgid "The data"
+#~ msgstr "Les données"
+
+#~ msgid "Discover"
+#~ msgstr "Découvrir"
+
+#~ msgid "Discovering the Platform"
+#~ msgstr "Découvrir la plateforme"
+
+#~ msgid "Popular Tags"
+#~ msgstr "Tags populaires"
+
+#~ msgid "PUBLISHED ON"
+#~ msgstr "PUBLIÉ LE"
+
+#~ msgid "BY"
+#~ msgstr "PAR"
+
+#~ msgid "Reuses"
+#~ msgstr "Réutilisations"
+
+#~ msgid "Common goods factory"
+#~ msgstr "Fabrique de biens communs"
+
+#~ msgid "Governance"
+#~ msgstr "Gouvernance"
+
+#~ msgid "Community"
+#~ msgstr "Communauté"
+
+#~ msgid "Team"
+#~ msgstr "Équipe"
+
+#~ msgid "Portal"
+#~ msgstr "Portail"
+
+#~ msgid "Projects"
+#~ msgstr "Projets"
+
+#~ msgid "Genesis"
+#~ msgstr "Genèse"
+
+#~ msgid "Contributions"
+#~ msgstr "Contributions"
+
+#~ msgid "Developers"
+#~ msgstr "Développeurs"
+
+#~ msgid "News"
+#~ msgstr "Actualités"
+
+#~ msgid "Help"
+#~ msgstr "Aide"
+
+#~ msgid "WHAT DATA ARE YOU LOOKING FOR ?"
+#~ msgstr "QUELLES DONNÉES RECHERCHEZ-VOUS ?"
+
+#~ msgid "Most viewed"
+#~ msgstr "Les plus vues"
+
+#~ msgid "Some numbers"
+#~ msgstr "Quelques chiffres"
+
+#~ msgid "The data producers"
+#~ msgstr "Les producteurs de données"
+
+#~ msgid "Open Data"
+#~ msgstr "Open Data"
+
+#~ msgid "Searching for data?"
+#~ msgstr "Vous cherchez des données"
+
+#~ msgid "Explore"
+#~ msgstr "Explorez"
+
+#~ msgid "datasets published on raseel by local authorities and public bodies."
+#~ msgstr ""
+#~ "les jeux de données publiés sur "
+#~ "raseel par les collectivités et "
+#~ "administrations publiques."
+
+#~ msgid "You have data to share?"
+#~ msgstr "Vous avez des données à partager"
+
+#~ msgid "If you search a place to host them, subscribe to our service"
+#~ msgstr "Publiez-les en utilisant notre service"
+
+#~ msgid ": click Install and steer by it. An raseel account is required."
+#~ msgstr ""
+#~ ": cliquer sur Installer et laissez-"
+#~ "vous guider. Un compte raseel est "
+#~ "requis."
+
