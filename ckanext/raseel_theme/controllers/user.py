@@ -437,7 +437,7 @@ class UserController(base.BaseController):
         h.redirect_to(controller='user', action='logged_out_page')
 
     def logged_out_page(self):
-        return render('user/dashboard.html')
+        return h.redirect_to(u'home.index')
 
     def request_reset(self):
         context = {'model': model, 'session': model.Session, 'user': c.user,
