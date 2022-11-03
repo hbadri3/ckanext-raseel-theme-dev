@@ -506,7 +506,7 @@ def logged_out():
 
 
 def logged_out_page():
-    return base.render(u'user/logout.html', {})
+    return h.redirect_to(u'home.index')
 
 
 def delete(id):
